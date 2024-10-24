@@ -1,3 +1,6 @@
+# ONLY FOR ESP32 WROOM-32 microcontroller
+# DONT USE IT FOR RASPBERRY PI 4
+
 import network, os, gc, sys
 
 def getDeviceInfo():

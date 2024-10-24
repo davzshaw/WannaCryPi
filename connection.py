@@ -1,3 +1,6 @@
+# ONLY FOR ESP32 - WROOM32 microcontroller
+# DON NOT USE IT FOR RASPBERRY PI 4
+
 import network
 import time
 from data import wifi

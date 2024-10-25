@@ -9,6 +9,8 @@ def readTemperature(channel=0):
   adcResponse = spi.xfer2([1, (8 + channel) << 4, 0])
   adcValue = ((adcResponse[1] & 1) << 8) + adcResponse[2]
   
+  print(f"Raw ADC Value: {adcValue}")  # Añadido para depuración
+  
   voltage = adcValue * 3.3 / 255
   temperatureC = voltage * 100
   
